@@ -1,0 +1,103 @@
+/* ========================================
+ *
+ * Home page
+ *
+ * ======================================== */
+
+/* ----------------------------------------
+ Main banner
+ ---------------------------------------- */
+.main-banner
+	display: none
+	margin: 0
+	&.active
+		display: inline-block
+	.slick-arrow
+		display: none !important
+	.box-inner
+		width: 100%
+		text-align: center
+	img
+		display: inline-block
+		vertical-align: top
+		&.img-mb
+			display: none
+	.slick-dots
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		margin: 6px 0 0 0
+		text-align: center
+		li
+			display: inline-block
+			vertical-align: middle
+			width: 100%
+			max-width: 60px
+			height: 4px
+			margin: 4px 4px 0
+			padding: 0
+			border: none
+			border-radius: 0
+			background-color: #dddddd
+			&:after
+				display: none
+			button
+				top: 0
+				left: 0
+				width: 100%
+			&.slick-active
+				background-color: $accent-color
+	@media screen and (max-width: 767px)
+		.slick-dots
+			li
+				max-width: 40px
+		.img-dsk
+			display: none
+		.img-mb
+			display: inline-block !important
+
+/* ----------------------------------------
+ Content mosaic
+ ---------------------------------------- */
+.content-mosaic
+	margin: 40px 0 0 0
+	overflow: hidden
+	.inner-mosaic
+		display: block
+		width: auto
+		margin: 0 -6px
+	.m-col
+		display: inline-block
+		vertical-align: top
+		margin: 0
+		text-align: center
+		> div
+			padding: 0
+		&:nth-child(1n+3)
+			display: none
+		@media screen and (min-width: 601px)
+			&:nth-child(1)
+				width: 50.5%
+				.item
+					padding: 1.34% 1%
+			&:nth-child(2)
+				width: 49.5%
+				.item
+					padding: 2.74% 2.06%
+		@media screen and (max-width: 600px)
+			width: 100%
+			.item
+				padding: 6px
+
+/* ----------------------------------------
+ Content featured
+ ---------------------------------------- */
+//.content-featured
+
+/* ----------------------------------------
+ Showcase home
+ ---------------------------------------- */
+.showcase-home
+	background: #f2f2f2
+	.container
+		background-color: #fff
